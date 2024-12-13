@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover how ancient Egyptian frequencies can help you manifest wealth and abundance effortlessly.">
-    <link rel="shortcut icon" href="img/manifest money.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/manifest_money.svg" type="image/x-icon">
     <title>Discover the Secret to Manifestation</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -39,7 +39,10 @@
 
         <div class="cta">
             <h3>Ready to Transform Your Life?</h3>
-            <button id="cta-button">Click Here to Learn More!</button>
+            <!-- Button updated with the correct URL -->
+            <button id="cta-button" onclick="gtag_report_conversion('https://astralhq.com/shifting-vibrations-manifest/?hopId=3b3a4657-664f-4c24-910b-cadbfd5be279&traffic_source=googleads&traffic_type=paid&campaign=ShiftingVibrationsTest&creative=headline1_test&ad=google_text_ad1')">
+                Click Here to Learn More!
+            </button>
         </div>
     </main>
 
@@ -50,32 +53,27 @@
     <script src="script.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16645387829"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-16645387829');
-</script>
-
-
-<script>
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined') {
-          window.location = url;
-        }
-      };
-      gtag('event', 'conversion', {
-          'send_to': 'AW-16645387829/AYsFCMDe0McZELXskYE-',
-          'transaction_id': '',
-          'event_callback': callback
-      });
-      return false;
-    }
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16645387829');
     </script>
-    
 
-
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof(url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-16645387829/AYsFCMDe0McZELXskYE-',
+                'transaction_id': '',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
 </body>
 </html>
